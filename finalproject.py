@@ -191,7 +191,7 @@ def feedbackpage():
                 userscore += 1
                 continue
     # print(userscore)
-    return template('feedbacktemplate.tpl', userscore=userscore, paragraphChoice=paragraphChoice, data=data, count=count)
+    return template('feedbacktemplate.tpl',  paragraphChoice = paragraphChoice, userscore=userscore, count=count, chosenBlanks=chosenBlanks, answers=answers)
 
 @post('/redirectpage')
 def redirectpage():
